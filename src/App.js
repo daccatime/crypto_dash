@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import WelcomeMessage from './WelcomeMessage' 
 import './app/App.css';
 import styled from 'styled-components'
+import AppLayout from './app/AppLayout'
 
 const MyButton = styled.h1`
 font-size: 1.5em;
@@ -13,11 +14,11 @@ color: green;
 class App extends Component {
   render() {
     return (
-    <div>
+    <AppLayout>
       <WelcomeMessage/>
       
-  <MyButton>Hello style</MyButton>  
-    </div>
+      <MyButton>Hello style</MyButton>  
+  </AppLayout>
   );
     }
 }
